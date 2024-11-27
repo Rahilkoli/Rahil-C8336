@@ -1,24 +1,24 @@
-package Lab6Q2;
-import java.util.ArrayList;
-import java.util.List;
+package Test;
+
+// Write a program to reverse a String
+import javax.print.attribute.standard.MediaSize;
+
 
 public class ReverseString {
     public static void main(String[] args) {
-
-        List<String> stringList = new ArrayList<>();
-        stringList.add("CAR");
-        stringList.add("BUS");
-        stringList.add("TRUK");
-        stringList.add("MONSTER TRUCK");
-
-        System.out.println("Original List: " + stringList);
+        String NAME = "HELLO WORLD";
+        String reversedNAME = " ";
+        for (int i = NAME.length()-1 ; i >= 0 ; i--){
+            reversedNAME +=  NAME.charAt(i);
 
 
-        List<String> reversedList = new ArrayList<>();
-        for (int i = stringList.size() - 1; i >= 0; i--) {
-            reversedList.add(stringList.get(i));
         }
+        System.out.println("original :" + NAME);
+        System.out.println(("Reversed: "+ reversedNAME));
 
-        System.out.println("Reversed List: " + reversedList);
+
     }
+
+
+
 }
